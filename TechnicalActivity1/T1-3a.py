@@ -38,6 +38,17 @@
 55555
 666666
 7777777
-
-
+this should be the output
 """
+
+
+for i in range(0,7):
+    for j in range(i+1):
+        if i == 1:
+            break
+        elif i == 5:
+            break
+        else:
+            print(end="")
+        print(i+1, end=" ")
+    print() 
