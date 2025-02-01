@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-background-color: #f0f0f0;
+    --resume-background-color: #c4c4c4;
+}
+
+body, html {
+    background: var(--main-background-color);
+    height: 100vh;
+    width: 100%;
+}
+
+.resume-container {
+    padding: 40px;
+    background: var(--resume-background-color);
+    margin: auto;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 10px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-head {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 220px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 0;
+}
+
+.resume-head > .head-content {
+
+}
+
+.resume-container .resume-picture {
+    height: 200px;
+    width: 200px;
+    background: wheat;
+    border-radius: 50%;
+}
+
+.resume-body {
+    background: #aa292938;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.bg-button {
+    position: absolute;
+    left: 80px;
+    top: 20;
+    height: 50px;
+    border-radius: 8px;
+    width: 100px;
+    background: var(--resume-background-color);
+    cursor: pointer;
+    border-style: none;
+    z-index: 1;
+    transition: transform 250ms ease-in-out;
+}
+
+.bg-button:hover {
+    transform: scale(1.2);
+}
