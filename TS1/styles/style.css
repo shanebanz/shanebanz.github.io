@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 :root {
@@ -13,20 +14,26 @@
 
 body, html {
     background: var(--main-background-color);
-    height: 100vh;
     width: 100%;
 }
 
 .resume-container {
     padding: 40px;
-    background: var(--resume-background-color);
-    margin: auto;
     width: 60%;
     margin: 50px auto;
     border-radius: 10px;
-    height: 1000px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #494949;
+}
+
+.bg-color {
+    background: var(--resume-background-color);
+}
+
+.resume-change-color {
+    background: #dfb277;
 }
 
 .resume-head {
@@ -39,22 +46,51 @@ body, html {
     padding: 0 40px 0 0;
 }
 
-.resume-head > .head-content {
-
-}
-
 .resume-container .resume-picture {
-    height: 200px;
-    width: 200px;
-    background: wheat;
+    height: 250px;
+    width: 250px;
+    background: #cacaca;
     border-radius: 50%;
 }
 
+.resume-picture > img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid #494949;
+}
+
 .resume-body {
-    background: #aa292938;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-direction: column;
+    margin: 50px 0;
+}
+
+.academic-background-content {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 10px; /* Adjust spacing between rows */
+    width: 50%;
+}
+
+.acad-row1, .acad-row2, .acad-row3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+.acad-row1 p, .acad-row2 p, .acad-row3 p {
+    margin: 20px 0; 
+    flex: 1; /* will take available space */
+    padding: 0 40px;
+}
+
+.acad-row1 span, .acad-row2 span, .acad-row3 span {
+    flex: 0; /* doesn't add extra width for the colon */
 }
 
 .bg-button {
@@ -66,11 +102,12 @@ body, html {
     width: 100px;
     background: var(--resume-background-color);
     cursor: pointer;
-    border-style: none;
+    border: 1px solid #494949;
     z-index: 1;
     transition: transform 250ms ease-in-out;
 }
 
 .bg-button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    background: #dfb277;
 }

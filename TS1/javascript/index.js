@@ -1,10 +1,12 @@
 function changeBgColor() {
     const resumeBody = document.getElementsByClassName("resume-container")[0]; 
 
-    if (resumeBody.style.backgroundColor === 'rgb(196, 196, 196)' || resumeBody.style.backgroundColor === '#c4c4c4') {
-        resumeBody.style.backgroundColor = '#E3F0AF';
+    if (resumeBody.classList.contains('bg-color')) {
+        resumeBody.classList.remove('bg-color')
+        resumeBody.classList.add('resume-change-color');
     } else {
-        resumeBody.style.backgroundColor = '#c4c4c4';
+        resumeBody.classList.remove('resume-change-color');
+        resumeBody.classList.add('bg-color')
     }
 }
 
