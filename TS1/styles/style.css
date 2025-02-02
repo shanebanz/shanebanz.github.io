@@ -1,122 +1,131 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+/* very handy */
 :root {
-    --main-background-color: #f0f0f0;
-    --resume-background-color: #c4c4c4;
+  --main-background-color: #f0f0f0;
+  --resume-background-color: #c4c4c4;
 }
 
-body, html {
-    background: var(--main-background-color);
-    width: 100%;
+body,
+html {
+  background: var(--main-background-color);
+  width: 100%;
 }
 
 .resume-container {
-    padding: 40px;
-    width: 60%;
-    margin: 50px auto;
-    border-radius: 10px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #494949;
+  padding: 40px;
+  width: 60%;
+  margin: 50px auto;
+  border-radius: 10px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #494949;
+  transition: background-color 250ms ease-in-out;
 }
 
 .bg-color {
-    background: var(--resume-background-color);
+  background: var(--resume-background-color);
 }
 
 .resume-change-color {
-    background: #dfb277;
+  background: #dfb277;
 }
 
 .resume-head {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 220px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px 0 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 220px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 0;
 }
 
 .resume-container .resume-picture {
-    height: 250px;
-    width: 250px;
-    background: #cacaca;
-    border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background: #cacaca;
+  border-radius: 50%;
 }
 
 .resume-picture > img {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: 1px solid #494949;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid #494949;
 }
 
 .resume-body {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    margin: 50px 0;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin: 50px 0;
 }
 
 .academic-background-content {
-    display: flex;
-    flex-direction: column; /* Stack rows vertically */
-    gap: 10px; /* Adjust spacing between rows */
-    width: 50%;
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 10px; /* Adjust spacing between rows */
+  width: 50%;
 }
 
-.acad-row1, .acad-row2, .acad-row3 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 5px 10px;
+.acad-row1,
+.acad-row2,
+.acad-row3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
 }
 
-.acad-row1 p, .acad-row2 p, .acad-row3 p {
-    margin: 20px 0; 
-    flex: 1; /* will take available space */
-    padding: 0 40px;
+.acad-row1 p,
+.acad-row2 p,
+.acad-row3 p {
+  margin: 20px 0;
+  flex: 1; /* will take available space */
+  padding: 0 40px;
 }
 
-.acad-row1 span, .acad-row2 span, .acad-row3 span {
-    flex: 0; /* doesn't add extra width for the colon */
+.acad-row1 span,
+.acad-row2 span,
+.acad-row3 span {
+  flex: 0; /* doesn't add extra width for the colon */
 }
 
 .bg-button {
-    position: absolute;
-    left: 80px;
-    top: 20;
-    height: 50px;
-    border-radius: 8px;
-    width: 100px;
-    cursor: pointer;
-    border: 1px solid #494949;
-    z-index: 1;
-    transition: transform 250ms ease-in-out;
+  position: absolute;
+  left: 80px;
+  top: 20;
+  height: 50px;
+  border-radius: 8px;
+  width: 100px;
+  cursor: pointer;
+  border: 1px solid #494949;
+  z-index: 1;
+  transition: transform 250ms ease-in-out;
 }
 
 .bg-button:hover {
-    transform: scale(1.1);
-    background: #dfb277;
+  transform: scale(1.1);
+  background: #dfb277;
 }
 
 /* i prefer not to use <hr> i use css styled instead */
 .divider {
-    height: 2px;
-    width: 95%;
-    background: #494949;
-    margin: 40px auto auto;
-    z-index: 2;
-    border-radius: 8px;
+  height: 2px;
+  width: 95%;
+  background: #494949;
+  margin: 40px auto auto;
+  z-index: 2;
+  border-radius: 8px;
 }
