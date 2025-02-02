@@ -1,5 +1,5 @@
 function changeBgColor() {
-    const resumeBody = document.getElementsByClassName("resume-container")[0]; 
+    const resumeBody = document.getElementsByClassName("resume-container")[0];
 
     if (resumeBody.classList.contains('bg-color')) {
         resumeBody.classList.remove('bg-color')

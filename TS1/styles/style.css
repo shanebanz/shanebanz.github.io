@@ -22,7 +22,7 @@ body, html {
     width: 60%;
     margin: 50px auto;
     border-radius: 10px;
-    height: 1100px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     border: 1px solid #494949;
@@ -100,7 +100,6 @@ body, html {
     height: 50px;
     border-radius: 8px;
     width: 100px;
-    background: var(--resume-background-color);
     cursor: pointer;
     border: 1px solid #494949;
     z-index: 1;
@@ -110,4 +109,14 @@ body, html {
 .bg-button:hover {
     transform: scale(1.1);
     background: #dfb277;
+}
+
+/* i prefer not to use <hr> i use css styled instead */
+.divider {
+    height: 2px;
+    width: 95%;
+    background: #494949;
+    margin: 40px auto auto;
+    z-index: 2;
+    border-radius: 8px;
 }
