@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary-col: #585858;
+  --primary-col: #7a7a7a;
   --secondary-col: #3f8caa;
   --tertiary-col: #7e7e7e;
 }
@@ -47,7 +47,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
-  color: black;
+  color: #0b0b0b;
 }
 
 .container-btn button:hover {
@@ -56,33 +56,33 @@ body {
 
 .container-btn button:nth-child(1) {
   background-color: #f5acb8;
-  border-color: pink;
+  border-color: #ffc0cb;
 } 
 .container-btn button:nth-child(2) {
   background-color: #dfdf00;
-  border-color: yellow;
+  border-color: #ffff00;
 }
 .container-btn button:nth-child(3) {
-  background-color: #0aa70a;
-  border-color: green;
+  background-color: hsl(120, 89%, 35%);
+  border-color: #008000;
 } 
 .container-btn button:nth-child(4) {
   background-color: #0000ff;
-  color: white;
-  border-color: blue;
+  color: #ffffff;
+  border-color: #0000ff;
 }
 .container-btn button:nth-child(5) {
   background-color: #eb0202;
-  color: white;
-  border-color: red;
+  color: #ffffff;
+  border-color: #ff0000;
 } 
 .container-btn button:nth-child(6) {
   background-color: #e770e7;
-  border-color: violet;
+  border-color: #ee82ee;
 } 
 .container-btn button:nth-child(7) {
   background-color: #6ec4e0;
-  border-color: lightblue;
+  border-color: #add8e6;
 } 
 
 .container-box {
@@ -95,61 +95,59 @@ body {
 }
 
 .box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 500px;
-  width: 500px;
-  border: 10px solid transparent;
-  border-radius: 15px;
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.3s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    height: 500px;
+    width: 500px;
+    border: 10px solid transparent;
+    border-radius: 15px;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease, background-color 1s ease;
 }
 
 .box-pink {
-  border-color: pink;
+  border-color: #ffc0cb;
   background-color: #ffc0cb;
 }
 
 .box-yellow {
-  border-color: yellow;
+  border-color: #ffff00;
   background-color: #ffff00;
 }
 
 .box-green {
-  border-color: green;
+  border-color: #00800000;
   background-color: #008000;
 }
 
 .box-blue {
-  border-color: blue;
+  border-color: #0000ff;
   background-color: #0000ff;
 }
 
 .box-red {
-  border-color: red;
+  border-color: #ff0000;
   background-color: #ff0000;
 }
 
 .box-violet {
-  border-color: violet;
+  border-color: #ee82ee;
   background-color: #ee82ee;
 }
 
 .box-lightblue {
-  border-color: lightblue;
+  border-color: #add8e6;
   background-color: #add8e6;
 }
 
 .box.active {
-  transform: translate(-50%, -40%);
-  opacity: 1;
-  background-color: none;
+    transform: translate(-50%, -40%);
+    opacity: 1;
+    background-color: transparent; 
 }
-
 .box.inactive {
-  transform: translate(-50%, -100%);
-  opacity: 0;
-  background-color: inherit;
+    transform: translate(-50%, -100%);
+    opacity: 0;
 }
