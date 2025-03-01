@@ -9,8 +9,8 @@
 
 :root {
     --background-col: #515151;
-    --primary-col: #85382e;
-    --text-col-primary: #924d44;
+    --primary-col: #974034;
+    --text-col-primary: #9c5045;
     --secondary-col: #b3b4af;
     --tertiary-col: #333333;
     --quarternary-col: #f0f0f0;
@@ -52,8 +52,9 @@ body {
     position: absolute;
     right: 0;
     background: var(--secondary-col);
-    height: 70%;
+    height: 95%;
     width: 4px;
+    border-radius: 8px;
 }
 
 .cal-container::after {
@@ -61,8 +62,9 @@ body {
     position: absolute;
     left: 0;
     background: var(--secondary-col);
-    height: 70%;
+    height: 95%;
     width: 4px;
+    border-radius: 8px;
 }
 
 
