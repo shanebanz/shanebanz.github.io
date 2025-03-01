@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 3 Machine Problem</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="javascript/index.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="javascript/index.js"></script>
   </head>
   <body>
     <div class="container">
-        <div class="container-btn">
-            <button>Monday</button>
-            <button>Tuesday</button>
-            <button>Wednesday</button>
-            <button>Thursday</button>
-            <button>Friday</button>
-            <button>Saturday</button>
-            <button>Sunday</button>
-        </div>
-        <div class="container-box">
-            <div class="the-box"></div>
-        </div>
+      <div class="container-btn">
+        <button onclick="moveBox(0)">Monday</button>
+        <button onclick="moveBox(1)">Tuesday</button>
+        <button onclick="moveBox(2)">Wednesday</button>
+        <button onclick="moveBox(3)">Thursday</button>
+        <button onclick="moveBox(4)">Friday</button>
+        <button onclick="moveBox(5)">Saturday</button>
+        <button onclick="moveBox(6)">Sunday</button>
+      </div>
+      <div class="container-box">
+        <div class="box box-pink"></div>
+        <div class="box box-yellow"></div>
+        <div class="box box-green"></div>
+        <div class="box box-blue"></div>
+        <div class="box box-red"></div>
+        <div class="box box-violet"></div>
+        <div class="box box-lightblue"></div>
+      </div>
     </div>
   </body>
 </html>
