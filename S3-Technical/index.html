@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | Machine Problem Module 4</title>
+    <link rel="stylesheet" href="/S3-Technical/css/style.css" />
+    <script src="/S3-Technical/javascript/index.js" defer></script>
+  </head>
+  <body>
+    <div class="cal-container">
+      <div class="calculator">
+        <span class="cal-text">
+            CALCULATOR
+        </span>
+        <div class="calc-display">
+          <input type="text" id="calc-input" readonly/>
+        </div>
+        <div class="calc-btn">
+            <button onclick="clearInput()">C</button>
+            <button onclick="backspace()"><</button>
+            <button onclick="addToInput('*')">X</button>
+            <button onclick="addToInput('/')">/</button>
+            <button onclick="addToInput(7)">7</button>
+            <button onclick="addToInput(8)">8</button>
+            <button onclick="addToInput(9)">9</button>
+            <button onclick="addToInput('-')">-</button>
+            <button onclick="addToInput(4)">4</button>
+            <button onclick="addToInput(5)">5</button>
+            <button onclick="addToInput(6)">6</button>
+            <button onclick="addToInput('+')">+</button>
+            <button onclick="addToInput(1)">1</button>
+            <button onclick="addToInput(2)">2</button>
+            <button onclick="addToInput(3)">3</button>
+            <button onclick="calculate()" class="equal">=</button>
+            <button class="zero" onclick="addToInput(0)">0</button>
+            <button onclick="addToInput('.')">.</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
