@@ -7,7 +7,7 @@ function addToInput(value) {
     let calculatorInput = document.getElementById('calc-input');
 
     if (value === '.' && calculatorInput.value.includes('.')) {
-        return;
+        return; // preprevent yung duplication ng '.' because realistically we can't have two consecutive dots on a calculator
     }
     calculatorInput.value += value;
 }
