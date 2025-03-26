@@ -1,0 +1,42 @@
+/* Google Fonts */
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --background-color: #363636;
+    --primary-color: #b98357;
+    --secondary-color: #b1b1b1;
+    --font-color: #db8e4f;
+}
+
+body {
+    background: var(--background-color);
+    padding: 30px;
+}
+
+/* main */
+h1 {
+    color: var(--font-color);
+}
+
+.food-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 10px;
+    background: var(--secondary-color);
+    border: solid 1px black;
+}
+
+.food-card-picture {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
